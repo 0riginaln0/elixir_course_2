@@ -12,7 +12,7 @@
 
 Запустим несколько процессов под монитором:
 
-```elixir-iex
+```elixir
 iex(1)> c "lib/monitor.exs"
 [MonitorExample]
 iex(2)> alias MonitorExample, as: M
@@ -42,7 +42,7 @@ Process id:2 pid:#PID<0.118.0> stopped
 
 Посмотрим, какие сообщения мы получили:
 
-```elixir-iex
+```elixir
 iex(4)> flush()
 {:DOWN, #Reference<0.2596432641.4157341700.33113>, :process, #PID<0.119.0>, :some_reason}
 {:DOWN, #Reference<0.2596432641.4157341700.33114>, :process, #PID<0.120.0>, :normal}
